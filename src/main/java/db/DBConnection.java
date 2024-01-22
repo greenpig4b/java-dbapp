@@ -16,7 +16,8 @@ public class DBConnection {
             Connection conn = DriverManager.getConnection(url,username,password);
             return conn;
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace(); // 에러난거 볼때.
         }
+        return null;
     }
 }
