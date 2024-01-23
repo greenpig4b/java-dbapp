@@ -84,9 +84,9 @@ public class BankDAO {
 
             ResultSet rs = pstmt.executeQuery();
 
-            // boolean isRow = rs.next(); // 커서 한칸 내리기
+            boolean isRow = rs.next(); // 커서 한칸 내리기
 
-            if(rs.next()){
+            if(isRow){
                 Account account = new Account(
                         rs.getInt("number"),
                         rs.getString("password"),

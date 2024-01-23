@@ -25,7 +25,7 @@ public class BankDaoTest {
     @Test
     public void selectByNumber_test(){
         //given
-        int number = 2;
+        int number = 4;
 
         //when
         BankDAO dao = new BankDAO();
